@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Blog da Bia',
+    position: 'Social Media',
     description: 'A blog about fashion, social media and other cool stuff.',
     author: '@cbsalt',
   },
