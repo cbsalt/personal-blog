@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: 'Blog da Bia',
     position: 'Social Media',
-    description: 'A blog about fashion, social media and other cool stuff.',
+    description: 'A blog about fashion business, social media and other cool stuff.',
     author: '@cbsalt',
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
