@@ -1,13 +1,16 @@
 import React from 'react';
 import {
-  FacebookCircle, InstagramAlt, PinterestAlt, LinkedinSquare,
+  FacebookCircle as Facebook,
+  InstagramAlt as Instagram,
+  PinterestAlt as Pinterest,
+  LinkedinSquare as LinkedIn,
 } from 'styled-icons/boxicons-logos';
 
 const Icons = {
-  FacebookCircle: <FacebookCircle />,
-  InstagramAlt: <InstagramAlt />,
-  PinterestAlt: <PinterestAlt />,
-  LinkedinSquare: <LinkedinSquare />,
+  Facebook: <Facebook />,
+  Instagram: <Instagram />,
+  Pinterest: <Pinterest />,
+  LinkedIn: <LinkedIn />,
 };
 
 export default Icons;

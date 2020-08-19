@@ -25,7 +25,9 @@ export const SocialLinksLink = styled.a`
 `;
 
 export const IconWrapper = styled.div`
-  fill: #bbb;
+  svg {
+    fill: #bbb;
   width: 30px;
   height: 30px;
+  }
 `;

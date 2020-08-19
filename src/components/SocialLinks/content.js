@@ -1,11 +1,11 @@
 const links = [
   {
     label: 'Pinterest',
-    url: 'https://br.pinterest.com/',
+    url: 'https://br.pinterest.com/beatrizcsal/',
   },
   {
     label: 'Facebook',
-    url: 'https://www.facebook.com/beatriz.sal.583',
+    url: 'https://www.facebook.com/beatrizyoufashion',
   },
   {
     label: 'Instagram',
