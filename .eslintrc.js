@@ -4,6 +4,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-one-expression-per-line': 'off',
+    'react/no-danger': 'off',
   },
   extends: 'airbnb',
 };
