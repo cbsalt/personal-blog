@@ -9,3 +9,5 @@ background: "#7159c1"
 # lorem
 
 lorem
+
+![Desert Photo](/assets/img/desert.jpg)
