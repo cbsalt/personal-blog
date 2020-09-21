@@ -22,18 +22,19 @@ const PostItem = ({
   </S.PostItemLink>
 );
 
+PostItem.defaultProps = {
+  background: null,
+  timeToRead: PropTypes.func,
+};
+
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,
   background: PropTypes.string,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.number.isRequired,
+  timeToRead: PropTypes.func,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-};
-
-PostItem.defaultProps = {
-  background: null,
 };
 
 export default PostItem;
