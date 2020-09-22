@@ -5,6 +5,7 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/no-danger': 'off',
+    'react/destructuring-assignment': 'off',
   },
   extends: 'airbnb',
 };
