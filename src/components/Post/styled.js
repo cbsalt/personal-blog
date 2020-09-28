@@ -123,7 +123,7 @@ export const MainContent = styled.section`
 
   iframe {
     padding: 0 1.6rem 1.6rem;
-    width: 100%
+    width: 100%;
 
   ${media.lessThan('large')`
     padding: 0 1rem;
@@ -191,7 +191,7 @@ export const MainContent = styled.section`
   }
 
   strong {
-    font-weight: 700
+    font-weight: 700;
   }
 
   .gatsby-resp-image-background-image {
