@@ -24,7 +24,7 @@ const PostItem = ({
 
 PostItem.defaultProps = {
   background: null,
-  timeToRead: PropTypes.func,
+  timeToRead: PropTypes.number,
 };
 
 PostItem.propTypes = {
@@ -32,7 +32,7 @@ PostItem.propTypes = {
   background: PropTypes.string,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.func,
+  timeToRead: PropTypes.number,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

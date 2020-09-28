@@ -2,18 +2,23 @@
 import React, { useState, useEffect } from 'react';
 
 import { Home, Grid } from 'styled-icons/boxicons-solid';
-import { SearchAlt as Search, UpArrowAlt as Arrow } from 'styled-icons/boxicons-regular';
+import { SearchAlt as Search, UpArrowAlt as Arrow, ListUl as List } from 'styled-icons/boxicons-regular';
 import { LightUp as Light } from 'styled-icons/entypo';
 import * as S from './styled';
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null);
+  const [display, setDisplay] = useState(null);
 
   const isDarkMode = theme === 'dark';
+  const isListMode = display === 'list';
 
   useEffect(() => {
     setTheme(window.__theme);
+    setDisplay(window.__display);
+
     window.__onThemeChange = () => setTheme(window.__theme);
+    window.__onDisplayChange = () => setDisplay(window.__display);
   }, []);
 
   return (
@@ -36,7 +41,15 @@ const MenuBar = () => {
           className={theme}
         ><Light />
         </S.MenuBarItem>
-        <S.MenuBarItem title="Mudar visualização"><Grid /></S.MenuBarItem>
+        <S.MenuBarItem
+          title="Mudar visualização"
+          onClick={() => {
+            window.__setPreferredDisplay(isListMode ? 'grid' : 'list');
+          }}
+          className="display"
+        >
+          {isListMode ? <Grid /> : <List />}
+        </S.MenuBarItem>
         <S.MenuBarItem title="Ir para o topo"><Arrow /></S.MenuBarItem>
       </S.MenuBarGroup>
     </S.MenuBarWrapper>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { Link } from 'gatsby';
 
 export const RecommendedWrapper = styled.section`
@@ -11,12 +12,18 @@ export const RecommendedWrapper = styled.section`
 export const RecommendedLink = styled(Link)`
   align-items: center;
   background: var(--mediumBackground);
-  color: var(--hightlight);
+  color: var(--highlight);
   display: flex;
   padding: 3rem;
   text-decoration: none;
   transition: background 0.5s;
   width: 50%;
+
+  ${media.lessThan('large')`
+    padding: 2rem 1rem;
+    line-height: 1.3;
+    font-size: .9rem;
+  `}
 
   &:hover {
     background: var(--borders);

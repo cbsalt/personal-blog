@@ -1,8 +1,13 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;
   width: 100%;
+
+  ${media.lessThan('large')`
+    display: none;
+  `}
 `;
 
 export const SocialLinksList = styled.ul`
@@ -20,14 +25,12 @@ export const SocialLinksLink = styled.a`
   transition: color 0.5s;
 
   &:hover {
-    color: var(--hightlight);
+    color: var(--highlight);
   }
 `;
 
 export const IconWrapper = styled.div`
-  svg {
-    fill: #bbb;
+  fill: #bbb;
   width: 30px;
   height: 30px;
-  }
 `;

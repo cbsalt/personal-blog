@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
     --borders: #38444d;
     --texts: #8899a6;
     --postColor: #fff;
-    --hightlight: #1fa1f2;
+    --highlight: #1fa1f2;
     --mediumBackground: #192734;
     --background: #16202c;
     --white: #fff;
@@ -74,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
     --borders: #dedede;
     --texts: #111;
     --postColor: #555555;
-    --hightlight: #1fa1f2;
+    --highlight: #1fa1f2;
     --mediumBackground: #f0f0f3;
     --background: #fff;
     --white: #fff;
