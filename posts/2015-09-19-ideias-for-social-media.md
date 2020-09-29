@@ -4,6 +4,7 @@ title: Ideias for social media
 description: About fashion universe.
 category: Misc
 background: "#7aab13"
+image: "/assets/img/desert.jpg"
 ---
 
 # lorem
