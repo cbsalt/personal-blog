@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-props-no-spreading */
-/* global window document */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -72,17 +71,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script>
-          if (window.netlifyIdentity) {
-            window.netlifyIdentity.on('init', (user) => {
-              if (!user) {
-                window.netlifyIdentity.on('login', () => {
-                  document.location.href = '/admin/';
-                });
-              }
-            })
-          }
-        </script>
       </body>
     </html>
   );
