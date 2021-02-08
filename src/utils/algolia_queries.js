@@ -1,4 +1,4 @@
-const postsQuery = `{
+const postQuery = `{
   posts: allMarkdownRemark (
     sort: { fields: frontmatter___date, order: DESC }
     ) {
@@ -32,11 +32,11 @@ const flatten = (arr) => arr.map(({ node: { frontmatter, ...rest } }) => ({
 
 const queries = [
   {
-    query: postsQuery,
+    query: postQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
     indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
     settings: {
-      attributesToSnippet: ['excerpet:20'],
+      attributesToSnippet: ['excerpt:20'],
     },
   },
 ];
