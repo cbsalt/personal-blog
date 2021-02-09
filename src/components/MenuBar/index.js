@@ -1,4 +1,3 @@
-/* eslint no-underscore-dangle: 0 */
 import React, { useState, useEffect } from 'react';
 
 import { Home, Grid } from 'styled-icons/boxicons-solid';
