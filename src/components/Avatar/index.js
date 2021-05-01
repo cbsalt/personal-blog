@@ -7,9 +7,9 @@ const Avatar = () => {
   const { avatarImage } = useStaticQuery(
     graphql`
       query {
-        avatarImage: file(relativePath: { eq: "user.png" }) {
+        avatarImage: file(relativePath: { eq: "avatar.jpeg" }) {
           childImageSharp {
-            fluid(maxWidth: 60) {
+            fluid(maxWidth: 40) {
               ...GatsbyImageSharpFluid
             }
           }
