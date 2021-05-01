@@ -36,9 +36,9 @@ collections:
         widget: "select",
         options: [
           { label: "vendas", value: "#efbb6f"},
-          { label: "marketing", value: "#c7d0d8"},
+          { label: "mkt", value: "#c7d0d8"},
           { label: "branding", value: "#f4ede5"},
-          { label: "tendências", value: "#f5d1c3"},
+          { label: "trend", value: "#f5d1c3"},
           { label: "moda", value: "#ffb6a5"},
         ]
      }
