@@ -8,7 +8,7 @@ description: "Na última segunda-feira (26 de abril) a Amaro divulgou a criaçã
   Bora estudar?"
 date: 2021-05-01 07:17:45
 image: assets/img/9482.jpg
-category: tendências
+category: trend
 background: "#f5d1c3"
 ---
 Case test
