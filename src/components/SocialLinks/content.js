@@ -9,7 +9,7 @@ const links = [
   },
   {
     label: 'Instagram',
-    url: 'https://www.instagram.com/beatrizcsocialmedia/',
+    url: 'https://www.instagram.com/beatrizcsalmkt/',
   },
   {
     label: 'LinkedIn',
